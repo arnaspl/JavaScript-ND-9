@@ -11,11 +11,11 @@ Car.prototype.getCarMakeModel = function () {
   const makeModel = {
     make: this.make,
     model: this.model
-  }
+  };
   
-  console.log(makeModel); 
+  return makeModel;
 };
-car1.getCarMakeModel();
+console.log(car1.getCarMakeModel());
 
 Car.prototype.engineFuel = function () {
     if (this.fuelType === 'Diesel') {
