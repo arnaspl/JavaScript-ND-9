@@ -11,7 +11,7 @@ class Car {
           make: this.make,
           model: this.model
         }
-        console.log(makeModel);
+        return makeModel;
     }
 
     engineFuel() {
@@ -26,5 +26,5 @@ class Car {
 }
 
 const car = new Car('BMW', 'X5', 'Black', 'Diesel');
-car.getCarMakeModel();
+console.log(car.getCarMakeModel());
 car.engineFuel();
